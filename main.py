@@ -11,34 +11,33 @@ my_dirname, my_filename = os.path.split(os.path.abspath( __file__ ) )
 
 #my_curr_dir = os.path.dirname(os.path.realpath(__file__))
 
-sys.path.append( "".join( [ my_dirname, os.sep, 'code' ] ) )
-sys.path.append( "".join( [ my_dirname, os.sep, 'data' ] ) )
+sys.path.append( "".join( [ my_dirname, os.sep, 'App_code' ] ) )
+sys.path.append( "".join( [ my_dirname, os.sep, 'App_data' ] ) )
 
 #for path in sys.path:
 #    print path + "\n"
 
 
-import code.WAP_V.constants
-import data.GLOBALS
+import App_code.WAP_V.constants
+import App_data.GLOBALS
 
 
 
-print code.WAP_V.constants.mod_vers + "\n"
+print App_code.WAP_V.constants.mod_vers + "\n"
 
-print code.WAP_V.constants.Continue
-print data.GLOBALS.mod_vers
+print App_code.WAP_V.constants.Continue
+print App_data.GLOBALS.mod_vers
 
 
-print dir( code )
-print dir( data )
-print dir( code.WAP_V )
+print dir( App_code )
+print dir( App_data )
+print dir( App_code.WAP_V )
 
-print __builtins__
+#print __builtins__
 #print code.__builtins__
 #print data.__builtins__
 
 
-# print sys.path
 
 
 
