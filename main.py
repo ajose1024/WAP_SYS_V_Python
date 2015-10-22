@@ -33,12 +33,11 @@ print dir( code )
 print dir( data )
 print dir( code.WAP_V )
 
-print __builtins__
+#print __builtins__
 #print code.__builtins__
 #print data.__builtins__
 
 
-# print sys.path
 
 
 
